@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/all.css" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
+
+    <title>Contato</title>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-light bg-light navbar-expand-md fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="./assets/logo.jfif" alt="Logo Shopping"
+                    style="width: 80px"></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
+                aria-expanded="false" aria-label="Botão de navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+
+                <div class="navbar-nav mx-auto ">
+                    <a class="nav-link nav-item pr-5" href="sobre.html">Sobre o Shopping</a>
+                    <div class="dropdown">
+
+                        <a class="nav-link nav-item pr-5 dropdown-toggle" data-toggle="dropdown" href="#lazer">Lazer</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="lazer.html#cinema">Cinema</a>
+                            <a class="dropdown-item" href="lazer.html#teatro">Teatro</a>
+                            <a class="dropdown-item" href="lazer.html#gastronomia">Gastronomia</a>
+
+
+                        </div>
+                    </div>
+                    <a class="nav-link nav-item pr-5" href="contato.html">Contato <i class="fa-solid fa-phone"></i></a>
+                </div>
+            </div>
+
+
+        </div>
+
+    </nav>
+
+    <div class="container justify-content-md-center" id="formulario">
+
+        <form class="well form-horizontal " action=" " method="" id="form_contato">
+            <fieldset>
+
+                <legend>Entre em Contato conosco!</legend>
+
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Nome</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input name="nome" placeholder="Nome" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Sobrenome</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input name="sobrenome" placeholder="Sobrenome" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">E-Mail</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                            <input name="email" placeholder="E-Mail" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Telefone de Contato</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                            <input name="telefone" placeholder="(21)1245-7012" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Escreva sobre o que deseja falar</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                            <textarea class="form-control" name="comment"
+                                placeholder="Conte-nos sobre o que deseja"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-4">
+                        <button value="showAlert" onclick="showAlert(event,form_contato)" type="submit"
+                            class="btn btn-warning">Enviar <span class="glyphicon glyphicon-send"></span></button>
+
+
+                    </div>
+
+
+                    <div class="container" style="display:none;" id="myAlert">
+                        <div class="alert alert-success alert-dismissable" id="myAlert2">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
+                            Mensagem enviada com sucesso! A pagina será atualiza em 5 segundos.
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="toast" id="myToast" data-delay="5000">
+                        <div class="toast-body">
+                            Bem vindo a página de contato. Por favor deixe sua mensagem e/ou feedback e responderemos
+                            assim que possível!
+                        </div>
+
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    </div>
+
+
+
+
+
+
+    <div class="footer row justify-content-md-center">
+        <div class="footerpt1">
+
+            <h4>Shopping Lorem Ipsum</h4>
+            <br>
+            <h7>Siga a gente nas Redes Sociais</h7>
+        </div>
+
+
+        <div class="footerpt1">
+
+            <div style='font-size:15px'> Endereço</div>
+            <div style='font-size:8px'> Rua do Shopping 123, bloco 48</div>
+            <br>
+            <div style='font-size:15px'> Para mais Informações</div>
+            <div style='font-size:8px'> (55)1234-5678</div>
+
+        </div>
+
+        <div class="footerpt1">
+
+            <div style='font-size:15px'> Horário de Funcionamento:
+            </div>
+            <div style='font-size:10px'>Lojas e Quiosques:</div>
+            <div style='font-size:8px'>Segunda à Sábado, das 10h às 22h</div>
+            <div style='font-size:8px'>Domingos e Feriados, das 14h às 20h</div>
+
+            <br>
+            <div style='font-size:15px'> Alimentação:</div>
+            <div style='font-size:8px'> Todos os dias, das 11h às 22h</div>
+
+        </div>
+    </div>
+
+    </div>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <script src="js/script.js"></script>
+
+    <script>
+        showToast();
+    </script>
+
+</body>
+
+</html>
